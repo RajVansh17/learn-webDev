@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* justify-content: always on main axis */
+/* align-items: alwyas on cross axis */
+
+.flex-container{
+    height: 400px;
+    background: grey;
+    display: flex;
+    /* when row- justify-content deals with x axis
+        and align-items deals with y axis */
+    justify-content:space-around;
+}
+
+.item{
+    height: 100px;
+    width: 100px;
+    background: rgb(95, 95, 250);
+    margin: 10px;
+    color: white;
+}
+
+.item:nth-of-type(1){
+    align-self: flex-start;
+}
+.item:nth-of-type(2){
+    align-self: center;
+}
+.item:nth-of-type(3){
+    align-self: flex-end;
+}

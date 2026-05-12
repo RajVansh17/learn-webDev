@@ -1,0 +1,27 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* justify-content: always on main axis */
+/* align-items: alwyas on cross axis */
+
+.flex-container{
+    background: grey;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    /* when column- justify-content deals with y axis
+        and align-items deals with x axis */
+    justify-content: space-between;
+    align-items: end;
+}
+
+
+
+.item{
+    height: 100px;
+    width: 100px;
+    background: rgb(95, 95, 250);
+    margin: 10px;
+    color: white;
+}
