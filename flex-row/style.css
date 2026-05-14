@@ -6,7 +6,7 @@ body{
 /* align-items: alwyas on cross axis */
 
 .flex-container{
-    height: 400px;
+    height: 401px;
     background: grey;
     display: flex;
     /* when row- justify-content deals with x axis
