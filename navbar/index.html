@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Dropdown Menu</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-100 flex justify-center items-start pt-20 h-screen">
+
+    <!-- 1. THE PARENT CONTAINER (Marked as 'group') -->
+    <div class="flex items-center justify-around w-7xl">
+
+        <div class="flex items-center ">
+            <h1 class="text-xl font-bold">NavBar</h1>
+        </div>
+
+        <!-- The Trigger Button -->
+        <div class="group relative">
+            <button
+                class="bg-blue-600 text-white px-6 py-3 rounded-md font-medium inline-flex items-center gap-2 hover:bg-blue-700 transition cursor-pointer">
+                <span>Hover Me</span>
+                <!-- Arrow Icon -->
+                <svg class="w-4 h-4 transition-transform duration-200 group-hover:rotate-180" fill="none"
+                    stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                </svg>
+            </button>
+
+            <!-- 2. THE DROPDOWN MENU (Hidden by default, shown on group-hover) -->
+            <div
+                class="absolute left-0 mt-0 w-35.5 bg-white rounded-md shadow-lg border border-gray-100 py-1 hidden group-hover:block animate-fadeIn ">
+                <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">My
+                    Profile</a>
+                <a href="#"
+                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-blue-50 hover:text-blue-600">Settings</a>
+                <hr class="border-gray-100 my-1 mx-1">
+                <a href="#" class="block px-4 py-2 text-sm text-red-600 hover:bg-red-50">Logout</a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
